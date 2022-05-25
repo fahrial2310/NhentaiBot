@@ -18,8 +18,8 @@ class Nhentai():
             code = " ".join(text)
             chapter = nh.get_chapter_by_code(code)
             format.manga_chapter_html(f"{code}", chapter)
-            await bot.send_message(
+            await bot.send_message():
                 event.chat_id,
                 "Open this in google chrome",
                 file= f"{code}.html"
-            )
+            
